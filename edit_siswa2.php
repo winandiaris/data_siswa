@@ -84,7 +84,7 @@ if(isset($_SESSION['nis']))
 	font-weight: bold;
 	color: #FF0000;
 }
-.style10 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.style10 {font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
 .style11 {color: #FFFFFF}
 		-->
 		</style>
@@ -202,9 +202,9 @@ if(isset($_SESSION['nis']))
 						
 						
   <form name="postform" enctype="multipart/form-data" action="edit_siswa2.php?id=<?php echo $id; ?>" method="post">
-	<table width="800" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#009933">
+	<table width="800" border="3" align="center" cellpadding="0" cellspacing="0" bordercolor="#009933">
 	<tr>
-		<td bgcolor="#B0C4DE">
+		<td bgcolor="#e6f3ff ">
 			<table width="790" cellspacing="0" cellpadding="0" border="0" align="center">
 			<tr>
 			<td width="2%">&nbsp;</td>
@@ -227,7 +227,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td width="2%">&nbsp;</td>
-			<td width="20%" height="22"><span class="style10">NIS</span></td>
+			<td width="20%" height="25"><span class="style10">NIS</span></td>
 		    <td width="42%"><font face="Times New Roman" size="2">
 		      <input type="text" name="nis" cols="30" rows="1" value="<?php echo $nis;?>" size=2" readonly="readonly">
 		    </font></td>
@@ -235,8 +235,8 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">Kelas</span></td>
-			<td><font face="Times New Roman" size="2">
+			<td height="25"><span class="style10">Kelas</span></td>
+			<td><font face="Times New Roman" size="3">
 		    <select name="kelas" size="1" id="kelas" value="<?php echo $kelas;?>">
 				<option selected="selected"><?php echo $kelas;?></option>
             	<option>XII IPA A</option>
@@ -253,7 +253,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">Nama Siswa </span>      </td>
+			<td height="25"><span class="style10">Nama Siswa </span>      </td>
 			<td><font face="Times New Roman" size="2">
 		    <input name="nama_siswa" type="text" value="<?php echo stripslashes($nama_siswa);?>" size="50" rows="1"><div><div>
 			<span><i>( Sesuai Ijazah SMP )</i></span><div>
@@ -262,7 +262,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td width="2%">&nbsp;</td>
-			<td width="20%" height="22"><span class="style10">Jenis Kelamin</span></td>
+			<td width="20%" height="25"><span class="style10">Jenis Kelamin</span></td>
 		    <td width="42%"><font face="Times New Roman" size="2">
 		       <input type="radio" name="kelamin" value="L"/>&nbsp;L &nbsp;&nbsp;&nbsp;&nbsp;
 				<input type="radio" name="kelamin" value="P"/>&nbsp;P
@@ -271,7 +271,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22" ><span class="style10">NISN</span></td>
+			<td height="25" ><span class="style10">NISN</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <input name="nisn" onkeypress="return hanyaAngka(event, false)" type="text" value="<?php echo $nisn;?>" size="10" rows="1"><br><span><i>Silahkan cek di <a href="http://nisn.data.kemdikbud.go.id/page/data"target="_blank" ><strong>http://nisn.data.kemdikbud.go.id/page/data</strong></i></span>
 			</font></td>
@@ -280,7 +280,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">Tempat Lahir</span></td>
+			<td height="25"><span class="style10">Tempat Lahir</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <input name="tmp_lahir" type="text" value="<?php echo $tmp_lahir;?>" size="10" rows="1">
 			</font></td>
@@ -288,12 +288,12 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">Tanggal Lahir</span></td> <td><input type="text" size="10" value="<?php echo $tgl_lahir;?>"  id="from" name="tgl_lahir" onClick="if(self.gfPop)gfPop.fPopCalendar(document.postform.from);return false;"/><a href="javascript:void(0)" onClick="if(self.gfPop)gfPop.fPopCalendar(document.postform.from);return false;"><img name="popcal" align="absmiddle" style="border:none" src="calender/calender.jpeg" width="34" height="29" border="0" alt=""></a></td>
+			<td height="25"><span class="style10">Tanggal Lahir</span></td> <td><input type="text" size="10" value="<?php echo $tgl_lahir;?>"  id="from" name="tgl_lahir" onClick="if(self.gfPop)gfPop.fPopCalendar(document.postform.from);return false;"/><a href="javascript:void(0)" onClick="if(self.gfPop)gfPop.fPopCalendar(document.postform.from);return false;"><img name="popcal" align="absmiddle" style="border:none" src="calender/calender.jpeg" width="34" height="29" border="0" alt=""></a></td>
 			</tr>
 									
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">Agama</span></td>
+			<td height="25"><span class="style10">Agama</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <select name="agama" size="1" id="agama" value="<?php echo $agama;?>">
 				<option selected="selected"><?php echo $agama;?></option>
@@ -308,7 +308,7 @@ if(isset($_SESSION['nis']))
 						
 			<tr>
 			<td width="2%">&nbsp;</td>
-			<td width="20%" height="22"><span class="style10">Anak Ke</span></td>
+			<td width="20%" height="25"><span class="style10">Anak Ke</span></td>
 		    <td width="42%"><font face="Times New Roman" size="2">
 				<input type="text" name="anak_ke" onkeypress="return hanyaAngka(event, false)" cols="30" rows="1" size="2" value="<?php echo $anak_ke;?>">
 				</font></td>
@@ -316,7 +316,7 @@ if(isset($_SESSION['nis']))
 					
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">Status</span></td>
+			<td height="25"><span class="style10">Status</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <select name="status" size="1" id="status" value="<?php echo $status;?>">
 				<option selected="selected"><?php echo $status;?></option>
@@ -329,7 +329,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td width="2%">&nbsp;</td>
-			<td width="20%" height="22"><span class="style10">Jumlah Saudara</span></td>
+			<td width="20%" height="25"><span class="style10">Jumlah Saudara</span></td>
 		    <td width="42%"><font face="Times New Roman" size="2">
 				<input type="text"name="jmlh_sdr" onkeypress="return hanyaAngka(event, false)" cols="30" rows="1" size="2" value="<?php echo $jmlh_sdr;?>">
 				</font></td>
@@ -343,7 +343,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jalan</span></td>
+			<td height="25"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jalan</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <input name="alamat" type="text" value="<?php echo $alamat;?>" size="50" rows="1">
 			</font></td>
@@ -351,7 +351,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RT</span></td>
+			<td height="25"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RT</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <input name="rt" onkeypress="return hanyaAngka(event, false)" type="text" value="<?php echo $rt;?>" size="2" rows="1">
 			</font></td>
@@ -359,7 +359,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RW</span></td>
+			<td height="25"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RW</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <input name="rw" onkeypress="return hanyaAngka(event, false)" type="text" value="<?php echo $rw;?>" size="2" rows="1">
 			</font></td>
@@ -367,7 +367,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dusun</span></td>
+			<td height="25"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dusun</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <input name="dusun" type="text" value="<?php echo $dusun;?>" size="50" rows="1">
 			</font></td>
@@ -375,7 +375,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desa</span></td>
+			<td height="25"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Desa</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <input name="desa" type="text" value="<?php echo $desa;?>" size="50" rows="1">
 			</font></td>
@@ -383,7 +383,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kecamatan</span></td>
+			<td height="25"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kecamatan</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <input name="kec" type="text" value="<?php echo $kec;?>" size="50" rows="1">
 			</font></td>
@@ -391,7 +391,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kabupaten</span></td>
+			<td height="25"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kabupaten</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <input name="kab" type="text" value="<?php echo $kab;?>" size="50" rows="1">
 			</font></td>
@@ -399,7 +399,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kode Pos</span></td>
+			<td height="25"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kode Pos</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <input name="kodepos" onkeypress="return hanyaAngka(event, false)" type="text" value="<?php echo $kodepos;?>" size="10" rows="1">
 			</font></td>
@@ -407,7 +407,7 @@ if(isset($_SESSION['nis']))
 			
 			<tr>
 			<td>&nbsp;</td>
-			<td height="22"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email</span></td>
+			<td height="25"><span class="style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <input name="email" type="text" value="<?php echo $email;?>" size="50" rows="1">
 			</font></td>
@@ -415,7 +415,7 @@ if(isset($_SESSION['nis']))
 													
 			<tr>
 			<td width="2%">&nbsp;</td>
-			<td width="20%" height="22"><span class="style10">Telephon/No. HP</span></td>
+			<td width="20%" height="25"><span class="style10">Telephon/No. HP</span></td>
 		    <td width="42%"><font face="Times New Roman" size="2">
 				<input type="text"name="telp" onkeypress="return hanyaAngka(event, false)" cols="30" rows="1" size="10" value="<?php echo $telp;?>">
 				</font></td>
@@ -423,7 +423,7 @@ if(isset($_SESSION['nis']))
 		
 			<tr>
 			<td>&nbsp;</td>
-			<td height="11"><span class="style10">Tinggi Badan (cm)</span></td>
+			<td height="25"><span class="style10">Tinggi Badan (cm)</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <input type="text" name="tb" onkeypress="return hanyaAngka(event, false)" cols="30" rows="1" size="2" value="<?php echo $tb;?>">
 			</font></td>
@@ -431,7 +431,7 @@ if(isset($_SESSION['nis']))
 		  
 			<tr>
 			<td>&nbsp;</td>
-			<td height="11"><span class="style10">Berat Badan (Kg)</span></td>
+			<td height="25"><span class="style10">Berat Badan (Kg)</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <input type="text"name="bb" onkeypress="return hanyaAngka(event, false)" cols="30" rows="1" size="2" value="<?php echo $bb;?>">
 			</font></td>
@@ -439,7 +439,7 @@ if(isset($_SESSION['nis']))
 		  
 			<tr>
 			<td>&nbsp;</td>
-			<td height="11"><span class="style10">Jarak Ke Sekolah</span></td>
+			<td height="25"><span class="style10">Jarak Ke Sekolah</span></td>
 			<td><font face="Times New Roman" size="2">
 		    <input type="text"name="jarak_sek" onkeypress="return hanyaAngka(event, false)" cols="30" rows="1" size="2" value="<?php echo $jarak_sek;?>">&nbsp;&nbsp;Km
 			</font></td>
@@ -447,7 +447,7 @@ if(isset($_SESSION['nis']))
 						
 			<tr>
 			<td>&nbsp;</td>
-			<td height="11"><span class="style10">Waktu Tempuh</span></td>
+			<td height="25"><span class="style10">Waktu Tempuh</span></td>
 			<td><font face="Times New Roman" size="2">
 				<input name="wktu_tmpuh" onkeypress="return hanyaAngka(event, false)" type="text" value="<?php echo $wktu_tmpuh;?>" size="2" rows="1" >&nbsp;&nbsp;Menit
 				</font></td>
