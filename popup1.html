@@ -1,0 +1,28 @@
+
+
+<html>
+<head>
+<title>Membuat Pop-Up Window</title>
+<script language="javascript">
+function buka_popup(){
+ window.open('identitas2.php', '', 'width=640, height=480, menubar=yes,location=yes,scrollbars=yes, resizeable=yes, status=yes, copyhistory=no,toolbar=no');
+}
+</script>
+<body onLoad="buka_popup();">
+<p>Anda juga dapat membuka window popupnya dari sini</p>
+<a href="javascript: buka_popup();">KLIK DISINI</a>
+</body>
+</html>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<body>
+<input type="hidden" id="test" value="test">
+<div id="button" onclick="window.open('http://www.example.com/?domein=' + document.getElementById('test').value,'_blank');">
+<strong>button text</strong>
+</div>
+</body>
+</html>
